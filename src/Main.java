@@ -1,17 +1,17 @@
 public class Main {
 
     public static void main(String[] args) {
-        int CurrentAccount = 100;
-        int Payment = 1100;
-        if (Payment >= 1000) {
-            int Bonus = Payment / 100;
-            int TotalAccount = CurrentAccount + Payment + Bonus;
-            System.out.println("Начисленно " + Bonus + " бонусных рублей");
-            System.out.println("Итоговая сумма на счету = " + TotalAccount);
+        int currentAccount = 100;
+        int payment = 1100;
+        if (payment >= 1000) {
+            int bonus = payment / 100;
+            int totalAccount = currentAccount + payment + bonus;
+            System.out.println("Начисленно " + bonus + " бонусных рублей");
+            System.out.println("Итоговая сумма на счету = " + totalAccount);
         } else {
-            int TotalAccount = CurrentAccount + Payment;
+            int totalAccount = currentAccount + payment;
             System.out.println("Пополнение счета менее 1000 рублей. Бонусных рублей не начисленно");
-            System.out.println("Итоговая сумма на счету = " + TotalAccount);
+            System.out.println("Итоговая сумма на счету = " + totalAccount);
         }
     }
 }
